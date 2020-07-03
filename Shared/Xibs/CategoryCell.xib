@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="gTV-IL-0wX" customClass="CategoryCell" customModule="ArtableAdmin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="aerial_2" translatesAutoresizingMaskIntoConstraints="NO" id="Q8c-qd-bYD">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="119.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="6uJ-g1-R48"/>
+                            <constraint firstAttribute="height" constant="119.5" id="gEv-8n-uTA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmF-Ez-U5K">
+                        <rect key="frame" x="8" y="119.5" width="84" height="22.5"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Q8c-qd-bYD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5WJ-bW-BOK"/>
+                <constraint firstItem="Q8c-qd-bYD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CbD-8c-M8y"/>
+                <constraint firstItem="UmF-Ez-U5K" firstAttribute="top" secondItem="Q8c-qd-bYD" secondAttribute="bottom" id="K4m-Ke-ziY"/>
+                <constraint firstAttribute="bottom" secondItem="UmF-Ez-U5K" secondAttribute="bottom" constant="8" id="btB-Kl-1rC"/>
+                <constraint firstAttribute="trailing" secondItem="Q8c-qd-bYD" secondAttribute="trailing" id="ere-wX-0AH"/>
+                <constraint firstItem="UmF-Ez-U5K" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="pPZ-B2-HlH"/>
+                <constraint firstAttribute="trailing" secondItem="UmF-Ez-U5K" secondAttribute="trailing" constant="8" id="rCt-C1-AL9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="125" height="205"/>
+            <connections>
+                <outlet property="categoryImg" destination="Q8c-qd-bYD" id="O9r-rU-BxW"/>
+                <outlet property="categoryLbl" destination="UmF-Ez-U5K" id="wz7-XK-0VV"/>
+            </connections>
+            <point key="canvasLocation" x="191.30434782608697" y="149.33035714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="aerial_2" width="1000" height="1778"/>
+    </resources>
+</document>
